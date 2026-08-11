@@ -8,9 +8,6 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Light Saas Landing Page",
   description: "Template created by Frontend Tribe",
-  verification: {
-    google: "eMolqWLdZ5fiq131mTpJzMA1I0wPSu484LKPHWmyzLI",
-  },
 };
 
 export default function RootLayout({
@@ -20,6 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="eMolqWLdZ5fiq131mTpJzMA1I0wPSu484LKPHWmyzLI"
+        />
+      </head>
       <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
       </body>
